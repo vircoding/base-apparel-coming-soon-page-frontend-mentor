@@ -70,10 +70,54 @@ header {
     margin-bottom: 30px;
 }
 
+.borderGradient {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 50px;
+    padding: 1px;
+}
+
+.info-form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
 .form-email {
     all: unset;
+    padding: 15px 25px;
+    text-align: left;
+    position: relative;
+    top: 1px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-color: var(--desaturated-red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    flex-grow: 1;
+}
+
+.form-email::placeholder {
+    all: unset;
+    text-align: left;
+    position: relative;
+    top: 1px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-color: var(--desaturated-red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .form-submit {
     all: unset;
+    line-height: 0;
+    background-color: var(--desaturated-red);
 }
