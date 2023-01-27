@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <title>Base Apparel coming soon page</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <img src="./images/logo.svg" alt="Base Apparel Logo" class="header-logo" />
+        </header>
+        <figure class="hero">
+            <img src="./images/hero-mobile.jpg" alt="Hero Image" class="hero-img" />
+        </figure>
+        <main class="info">
+            <h2 class="title-h2">We're</h2>
+            <h1 class="title-h1">coming soon</h1>
+            <p class="info-paragraph">
+                Hello fellow shoppers! We're currently building our new fashion store. Add your
+                email below to stay up-to-date with announcements and our launch deals.
+            </p>
+            <form id="form" class="info-form">
+                <input type="email" placeholder="Email Address" class="form-email" />
+                <button type="submit" class="form-submit">
+                    <img src="./images/icon-arrow.svg" alt="Arrow Icon" class="submit-arrow" />
+                </button>
+            </form>
+        </main>
+        <script src="./js/script.js"></script>
+        <br />
+        <br />
+        <br />
+        <br />
+    </body>
 </html>
