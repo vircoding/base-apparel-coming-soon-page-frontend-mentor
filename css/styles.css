@@ -134,17 +134,19 @@ body {
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1024px) {
     body {
         padding: 0;
         display: grid;
         grid-template-columns: 57.63% 42.37%;
         grid-template-rows: 167px 1fr;
         font-size: 16px;
+        min-height: initial;
+        height: 100vh;
     }
 
     .header {
-        padding: 67px 165px;
+        padding: 67px 0 0 95px;
         position: absolute;
     }
 
@@ -175,10 +177,15 @@ body {
     }
 
     .info {
-        padding: 75px 220px 0 165px;
+        padding: 0 18% 0 95px;
+        padding-bottom: calc(100vh * 0.20375);
+        padding-bottom: -moz-calc(100vh * 0.20375);
         text-align: initial;
         grid-row: 2/3;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
     }
 
     .title-h2 {
@@ -203,5 +210,16 @@ body {
 
     .form-submit {
         padding: 0 50px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header {
+        padding-left: 165px;
+    }
+
+    .info {
+        padding-right: 220px;
+        padding-left: 165px;
     }
 }
