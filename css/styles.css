@@ -22,7 +22,8 @@ body {
     font-size: 14px;
     font-family: var(--josefin-sans);
     min-height: 100vh;
-    padding-bottom: 75px;
+    padding-bottom: 40px;
+    padding-bottom: 1fr;
     background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
@@ -85,20 +86,22 @@ body {
     display: flex;
     justify-content: space-between;
     border-radius: 50px;
-    background-color: #fff;
-    /* border: 1px solid hsl(0, 80%, 86%); */
+    background-color: transparent;
     box-shadow: inset 0 0 0 1px hsl(0, 80%, 86%);
+}
+
+.info-form-error {
+    box-shadow: inset 0 0 0 2px var(--soft-red);
 }
 
 .form-email {
     all: unset;
     width: 100%;
-    padding: 15px 25px;
+    padding: 15px 5px 15px 25px;
     text-align: left;
     position: relative;
     top: 1px;
     color: hsl(0, 80%, 86%);
-    /* font-weight: 300; */
 }
 
 .form-email::placeholder {
@@ -107,13 +110,26 @@ body {
     position: relative;
     top: 1px;
     color: hsl(0, 80%, 86%);
-    /* font-weight: 300; */
+}
+
+.form-email-error {
+    color: var(--dark-grayish-red);
+}
+
+.form-errorIcon {
+    align-self: center;
+    height: 24px;
+    margin-right: 15px;
+    display: none;
+}
+
+.form-errorIcon-error {
+    display: initial;
 }
 
 .form-submit {
     all: unset;
     line-height: 0;
-    background-color: var(--desaturated-red);
     padding: 0 30px;
     border-radius: 50px;
     position: relative;
@@ -131,6 +147,18 @@ body {
     box-shadow: 0 10px 20px hsl(0, 65%, 80%);
 }
 
+.info-alert {
+    margin: 13px 0 0 25px;
+    text-align: left;
+    color: var(--soft-red);
+    font-size: 13px;
+    display: none;
+}
+
+.info-alert-error {
+    display: block;
+}
+
 @media (min-width: 1024px) {
     body {
         background-image: url(../images/bg-pattern-desktop.svg),
@@ -140,12 +168,12 @@ body {
         grid-template-columns: 57.63% 42.37%;
         grid-template-rows: 167px 1fr;
         font-size: 16px;
-        min-height: initial;
+        min-height: 800px;
         height: 100vh;
     }
 
     .header {
-        padding: 67px 0 0 95px;
+        padding: 67px 0 67px 95px;
         position: absolute;
     }
 
@@ -176,15 +204,12 @@ body {
     }
 
     .info {
-        padding: 0 18% 0 95px;
-        padding-bottom: calc(100vh * 0.20375);
-        padding-bottom: -moz-calc(100vh * 0.20375);
+        padding-top: 73px;
         text-align: initial;
         grid-row: 2/3;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: end;
     }
 
     .title-h2 {
@@ -209,6 +234,11 @@ body {
 
     .form-submit {
         padding: 0 45px;
+    }
+
+    .info-alert {
+        margin-left: 33px;
+        font-size: 13px;
     }
 }
 
