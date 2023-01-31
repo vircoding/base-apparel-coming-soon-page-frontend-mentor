@@ -20,6 +20,7 @@ body {
     color: var(--desaturated-red);
     font-size: 14px;
     font-family: var(--josefin-sans);
+    padding-bottom: 93px;
 }
 
 header {
