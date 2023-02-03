@@ -6,7 +6,7 @@ const alert = document.getElementById('alert');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     // console.log(email.value);
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value.trim())) {
         form.classList.add('info-form-error');
         email.classList.add('form-email-error');
         errorIcon.classList.add('form-errorIcon-error');
